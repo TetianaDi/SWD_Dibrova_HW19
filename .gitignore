@@ -1,0 +1,11 @@
+DibrovaSeleniumProject/bin/
+packages/Newtonsoft.Json.13.0.1/lib/
+packages/NUnit.4.0.0/lib/
+packages/
+DibrovaSeleniumProject/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+DibrovaSeleniumProject/obj/
+.vs/DibrovaSeleniumProject/
+DibrovaSeleniumProject/packages.config
+DibrovaSeleniumProject/DibrovaSeleniumProject.csproj
+DibrovaSeleniumProject/Properties/AssemblyInfo.cs
+DibrovaSeleniumProject.sln
