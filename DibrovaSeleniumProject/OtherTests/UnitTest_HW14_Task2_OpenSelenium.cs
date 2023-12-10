@@ -44,7 +44,7 @@ namespace DibrovaSeleniumProject
             IWebElement searchButton = driver.FindElement(By.XPath("//*[@class='gNO89b'][@role='button']"));
             searchButton.Click();
 
-            IWebElement seleniumLink = driver.FindElement(By.CssSelector("[class='byrV5b'] [class='tjvcx GvPZzd cHaqb']"));
+            IWebElement seleniumLink = driver.FindElement(By.CssSelector("[href='https://www.selenium.dev/']"));
             seleniumLink.Click();
 
             // Assert

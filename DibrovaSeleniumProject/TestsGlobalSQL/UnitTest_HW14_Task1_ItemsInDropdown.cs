@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using DibrovaSeleniumProject.PagesGlobalSQL;
+using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System;
@@ -31,21 +32,20 @@ namespace DibrovaSeleniumProject
         {
             // Arrange
             driver.Url = "https://www.globalsqa.com/demo-site/select-dropdown-menu/";
-            
-            IWebElement dropdown = driver.FindElement(By.XPath("//select"));
-        
+
             // Act 
-            
-            string sizeAttribute = dropdown.GetAttribute("childElementCount");
+
+            GlobalSQLDropdownMenuPage globalSQLDropdownMenuPage = new GlobalSQLDropdownMenuPage(driver);
+           
+            string sizeAttribute = globalSQLDropdownMenuPage.DropdownSelectCountry.GetAttribute("childElementCount");
 
             int numberOfItems = int.Parse(sizeAttribute);
-
             int expectedItems = 249;
 
             // Assert
 
-            Assert.That(expectedItems == numberOfItems, $"Expected items '{expectedItems}' " +
-                $"isn't equal current items '{numberOfItems}'");
+            Assert.That(expectedItems == numberOfItems, $"Expected items in dropdown '{expectedItems}' " +
+                $"isn't equal current items in dropdown '{numberOfItems}'");
         }
     }
 }
