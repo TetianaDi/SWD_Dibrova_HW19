@@ -45,14 +45,14 @@ namespace DibrovaSeleniumProject
             IWebElement clickSubmitButton = driver.FindElement(By.CssSelector(".Ol0-ktls.jY4tHruE._2yaudugp"));
             clickSubmitButton.Click();
 
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(15);
+            
 
             IWebElement verifyLoginInElement = driver.FindElement(By.CssSelector(".login-button__user"));
             bool statusOfLoginInElement = verifyLoginInElement.Displayed;
 
             // Assert
 
-            Assert.That(statusOfLoginInElement == true, $"Expected status of login element '{statusOfLoginInElement} isn't {true}'");      
+            Assert.That(statusOfLoginInElement == true, $"User login is failed, because expected status of login element '{statusOfLoginInElement} isn't {true}'");      
                 
 
             

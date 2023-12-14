@@ -3,8 +3,6 @@ using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium;
 using System;
 using DibrovaSeleniumProject.Pages;
-using System.Threading;
-using OpenQA.Selenium.Support.UI;
 using OpenQA.Selenium.Interactions;
 
 namespace DibrovaSeleniumProject.Tests
