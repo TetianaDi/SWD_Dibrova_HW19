@@ -44,9 +44,7 @@ namespace DibrovaSeleniumProject
 
             IWebElement clickSubmitButton = driver.FindElement(By.CssSelector(".Ol0-ktls.jY4tHruE._2yaudugp"));
             clickSubmitButton.Click();
-
-            
-
+                        
             IWebElement verifyLoginInElement = driver.FindElement(By.CssSelector(".login-button__user"));
             bool statusOfLoginInElement = verifyLoginInElement.Displayed;
 
